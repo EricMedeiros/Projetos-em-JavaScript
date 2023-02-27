@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>distancia entre pontos</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
     <div>
-        <h1>distância entre pontos</h1>
-        <p>ponto 1: <input type="text" name="p1x" id="p1x"> <input type="text" name="p1y" id="p1y"></p>
-        <p>ponto 2: <input type="text" name="p2x" id="p2x"><input type="text" name="p2y" id="p2y"></p>
+        <form>
+            <h1>distância entre pontos</h1>
+            <p>ponto 1: <input type="text" name="p1x" id="p1x" placeholder=" X"> <input type="text" name="p1y" id="p1y" placeholder=" Y"></p>
+            <p>ponto 2: <input type="text" name="p2x" id="p2x" placeholder=" X"> <input type="text" name="p2y" id="p2y" placeholder=" Y"></p>
+            <br>
+            <input type="button" value="calcular" onclick="calcular()">
+            <input type="reset" value="limpar">
+        </form>
+        <p id="res">
+
+        </p>
     </div>
 </body>
 

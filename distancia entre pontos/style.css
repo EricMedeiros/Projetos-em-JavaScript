@@ -1,0 +1,24 @@
+@charset "UTC-8";
+
+*{  
+
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: gray;
+    
+}
+div{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(to top, rgba(255, 255, 0, 0.555), rgba(255, 166, 0, 0.562));
+    padding: 30px;
+    border-radius: 10px;
+}
+#p1x, #p1y,#p2x,#p2y{
+    width: 20px;
+}
