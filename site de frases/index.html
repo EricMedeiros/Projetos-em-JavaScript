@@ -49,37 +49,89 @@
     </style>
 </head>
 <body>
-    <div style="display: block; padding: 20px; height: 80px; background-color: aqua;" > o que eu diria pra você agora? <input type="button" value="quero saber" onclick="mostrar()" ></div>
-    <div id="00"><p>ja muito tarde, ja devia estar dormindo</p></div>
-    <div id="01"><p>o que você ta fazendo?</p></div>
-    <div id="02"><p>sai desse tiktok, isso é coisa do diabo</p></div>
-    <div id="03"><p>to realmente preocupado, o que que ta acontecendo contigo?</p></div>
-    <div id="04"><p>tu não vai trabalhar amanhã não?</p></div>
-    <div id="05"><p>bom dia, flor de pessoa hihi</p></div>
-    <div id="06"><p>humm que cafézinho gostoso</p></div>
-    <div id="07"><p>corre que ta quase na hora</p></div>
-    <div id="08"><p>agora pode relaxar já já tem mais</p></div>
-    <div id="09"><p>já pensou no quão lindo está o dia hoje?</p></div>
-    <div id="10"><p>desliga o ventilador pfvr, to com frio</p></div>
-    <div id="11"><p>bebe água, corre que ainda da tempo</p></div>
-    <div id="12"><p>já lança a marmita no microondas, que hoje não tem ovo com linguiça de marmita, blessed</p></div>
-    <div id="13"><p>ta cheia né? procure uma rede, que vai ser só flores brancas e iemanja</p></div>
-    <div id="14"><p>essa é aquela hora que separa o vagabundo do trabalhador de vdd</p></div>
-    <div id="15"><p>ta sentindo essa fominha tb? eu ja to ficando com fome</p></div>
-    <div id="16"><p>não dorme não, eu sei que dá vontade, mas n caia em tentação</p></div>
-    <div id="17"><p>hora do exercício, vamo se animar</p></div>
-    <div id="18"><p>toma aquela ducha boa, pra refrescar e lavar a alma</p></div>
-    <div id="19"><p>por que você não vem me ver? eu tenho sdds</p></div>
-    <div id="20"><p>vai com calma ai campeão, vamo acalmar a mente, lê um negocinho</p></div>
-    <div id="21"><p>liga pro seu namorado bonitão pra conversar</p></div>
-    <div id="22"><p>você ja ta morrendo de sono né, dorme bem meu bem</p></div>
-    <div id="23"><p>a conversa ta muito boa, mas você tem que dormir</p></div>    
+    <div id="home" style="display: block; padding: 20px; height: 80px; background-color: aqua;" > o que eu diria pra você agora? <input type="button" value="quero saber" onclick="mostrar()" ></div>
+    <div id="h00"><p>já tá muito tarde, você já devia estar dormindo</p></div>
+    <div id="h01"><p>o que você ta fazendo?</p></div>
+    <div id="h02"><p>sai desse tiktok, isso é coisa do diabo</p></div>
+    <div id="h03"><p>to realmente preocupado, o que que ta acontecendo contigo?</p></div>
+    <div id="h04"><p>tu não vai trabalhar amanhã não?</p></div>
+    <div id="h05"><p>bom dia, flor de pessoa hihi</p></div>
+    <div id="h06"><p>humm que cafézinho gostoso</p></div>
+    <div id="h07"><p>corre que ta quase na hora</p></div>
+    <div id="h08"><p>agora pode relaxar já já tem mais</p></div>
+    <div id="h09"><p>já pensou no quão lindo está o dia hoje?</p></div>
+    <div id="h10"><p>desliga o ventilador pfvr, to com frio</p></div>
+    <div id="h11"><p>bebe água, corre que ainda da tempo</p></div>
+    <div id="h12"><p>já lança a marmita no microondas, que hoje não tem ovo com linguiça de marmita, blessed</p></div>
+    <div id="h13"><p>ta cheia né? procure uma rede, que vai ser só flores brancas e iemanja</p></div>
+    <div id="h14"><p>essa é aquela hora que separa o vagabundo do trabalhador de vdd</p></div>
+    <div id="h15"><p>ta sentindo essa fominha tb? eu ja to ficando com fome</p></div>
+    <div id="h16"><p>não dorme não, eu sei que dá vontade, mas n caia em tentação</p></div>
+    <div id="h17"><p>hora do exercício, vamo se animar</p></div>
+    <div id="h18"><p>toma aquela ducha boa, pra refrescar e lavar a alma</p></div>
+    <div id="h19"><p>por que você não vem me ver? eu tenho sdds</p></div>
+    <div id="h20"><p>vai com calma ai campeão, vamo acalmar a mente, lê um negocinho</p></div>
+    <div id="h21"><p>liga pro seu namorado bonitão pra conversar</p></div>
+    <div id="h22"><p>você ja ta morrendo de sono né, dorme bem meu bem</p></div>
+    <div id="h23"><p>a conversa ta muito boa, mas você tem que dormir</p></div>    
 </body>
 <script>
     var data = new Date()
     var hora = data.getHours()
+
     function mostrar(){
-        if
+    
+    switch(hora){
+    case 00: h00.style.display = "block", home.style.display = "none"
+    break
+    case 01: h01.style.display = "block", home.style.display = "none"
+    break
+    case 02: h02.style.display = "block", home.style.display = "none"
+    break
+    case 03: h03.style.display = "block", home.style.display = "none"
+    break
+    case 04: h04.style.display = "block", home.style.display = "none"
+    break
+    case 05: h05.style.display = "block", home.style.display = "none"
+    break
+    case 06: h06.style.display = "block", home.style.display = "none"
+    break
+    case 07: h07.style.display = "block", home.style.display = "none"
+    break
+    case 08: h08.style.display = "block", home.style.display = "none"
+    break
+    case 09: h09.style.display = "block", home.style.display = "none"
+    break
+    case 10: h10.style.display = "block", home.style.display = "none"
+    break
+    case 11: h11.style.display = "block", home.style.display = "none"
+    break
+    case 12: h12.style.display = "block", home.style.display = "none"
+    break
+    case 13: h13.style.display = "block", home.style.display = "none"
+    break
+    case 14: h14.style.display = "block", home.style.display = "none"
+    break
+    case 15: h15.style.display = "block", home.style.display = "none"
+    break
+    case 16: h16.style.display = "block", home.style.display = "none"
+    break
+    case 17: h17.style.display = "block", home.style.display = "none"
+    break
+    case 18: h18.style.display = "block", home.style.display = "none"
+    break
+    case 19: h19.style.display = "block", home.style.display = "none"
+    break
+    case 20: h20.style.display = "block", home.style.display = "none"
+    break
+    case 21: h21.style.display = "block", home.style.display = "none"
+    break
+    case 22: h22.style.display = "block", home.style.display = "none"
+    break
+    case 23: h23.style.display = "block", home.style.display = "none"
+    break
+
+    }
     }
 
 </script>
