@@ -25,3 +25,6 @@ while(n>1){
 
 }
 console.log(produto)
+
+var hoje = new Date();
+console.log(hoje.getHours())
