@@ -35,14 +35,26 @@ form{
 }
 input[type= "button"],input[type="reset"]{
     width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid black;
+    color: black;
+    font-family: cursive;
+    font-size: 0.9em;
     margin-top: -30px;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    margin: 8px;
+    transition: background-color 0.5s, color 0.5s;
     
     
 }
 input[type= "button"]:hover,input[type="reset"]:hover{
     box-shadow: 1px 1px 6px  black;
-    background-color: rgb(255, 252, 227);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(-5px);
 }
