@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 136, 81), rgb(97, 0, 97));
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#content{
+    padding-top: 150px;
+    line-height: 60px;
+}
+#text{
+    height: 40px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+#itarefa{
+    height: 40px;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.897);
+    border: 1px solid black;
+    outline: none;
+    text-indent: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#add{
+    height: 42px;
+    width: 42px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    cursor: pointer;
+    padding-top: 5px;
+    padding: 1px;
+    margin-right: -1px;   
+}
+
+li{
+    height: 40px;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.897);
+    margin: 20px auto;
+    text-indent: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    list-style: none;
+    
+    
+}
+
+li span{
+    height: 40px;
+    width: 312px;
+    display: flex;
+    float: left;
+    border-radius: 2px;
+    margin: auto;
+    text-indent: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+       
+}
+.tarefa p{
+    margin-top: -10px;
+    
+}
+
+.material-symbols-outlined{
+    height: 38px;
+    width: 42px;
+    font-size: 28px;
+    top: 0;
+    right: 0; 
+    cursor: pointer;
+    padding: 1px;
+    display: flex;
+    float: right;
+    
+}
+
+.hide{
+    display: none;
+}
+
+.done{
+    background-color: rgb(97, 0, 97);
+    color: white;
+    font-weight: 700;
+    
+}

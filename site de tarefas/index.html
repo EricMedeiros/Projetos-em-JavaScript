@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="content">
+        <h2>Salve a sua próxima tarefa:</h2>
+        <div id="text">
+            <form action="">
+                <input type="text" name="tarefa" id="itarefa" placeholder="O que você vai fazer?" autocomplete="off"><input type="submit" value="+" id="add">
+            </form>
+        </div>
+        <h2>Estas são as suas tarefas:</h2>
+        <ul id="lista">
+            <li class="hide template"> 
+                <span class="tarefa cor"><p></p></span>                                    
+                <span class="material-symbols-outlined cor" id="cumprida"><p>done</p></span>
+                <span class="material-symbols-outlined cor" id="deletar"><p>close</p></span>                                  
+            </li>
+        </ul>
+            
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
