@@ -1,0 +1,112 @@
+@charset "UTC-8";
+@font-face {
+    font-family: pokemon;
+    src: url(fontes/Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family: bit;
+    src: url(fontes/8-BIT\ WONDER.TTF);
+}
+body{
+    width: 99vw;
+    height: 92vh;
+    
+}
+
+h1{
+    font-family: pokemon;
+    text-align: center;
+    margin-top: -15px;
+    font-weight: 600;
+    font-size: 4em;
+    position: relative;
+}
+
+ #content{
+    width: 425px;
+    height: 637px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(imagens/pokedex.png);
+}
+
+#res{
+    background-color: rgb(0, 0, 0);
+    width: 257px;
+    height: 168px;
+    position: absolute;
+    top: -130.9%;
+    left: -10%;
+    border-radius: 10px;
+    
+}
+
+#pokedex{
+    position: relative;
+    top: 65%;
+    left: 25%;
+    
+}
+
+form p{
+    font-family: bit;
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: -4px;
+
+
+}
+
+input[type="text"]{
+    width: 125px;
+    outline: none;
+    box-shadow: #898989 -3px 3px 0px 0px, #363636 -5px 6px 0px;
+    border-radius: 3px ;
+    height: 28px;
+    font-family: bit;
+}
+
+input[type="text"]::placeholder{
+    text-indent: 8px;
+}
+
+#inome{
+    margin-left: 34px;
+}
+#ialtura{
+    margin-left: 34px;
+}
+#ipeso{
+    margin-left: 34px;
+}
+
+input[type="button"]{
+    margin-left: 34px;
+    width: 132px;
+    height: 40px;
+    box-shadow: #242424 -3px 3px 0px 0px, #000000 -5px 6px 0px;
+    font-family: bit;
+    background-color: #575757;
+    color: white;
+    border-radius: 3px;
+}
+input[type="button"]:active{
+    box-shadow: inset #242424 -4px 4px 0px 0px;
+}
+#resImc{
+    position: absolute;
+    top: -38%;
+    left: -2%;
+    font-family: bit;
+}
+#pokemon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+
+}
