@@ -2,3 +2,33 @@ body{
     text-align: center;
     margin-top: 100px;
 }
+#base{
+    width: 150px;
+    height: 340px;
+    background-color: black;
+    margin: 40px auto;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.red{
+   background-color: rgba(255, 0, 0, 0.342); 
+}
+#Camarelo{
+    background-color: rgba(255, 255, 0, 0.356);
+}
+#Cverde{
+    background-color: rgba(122, 252, 36, 0.342);
+}
+#base div{
+    margin: 30px auto;
+    position: relative;
+    top: 10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.cor1{
+    background-color: red;
+}
