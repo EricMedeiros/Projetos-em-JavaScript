@@ -1,4 +1,20 @@
-body{
-    text-align: center;
-    margin-top: 100px;
+body {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#farol{
+    
+    
+    justify-content: center;
+    
+}
+#btn{
+    width: 0px;
+    margin: 10px 0px 0px -80px;
+    line-height: 35px;
 }
