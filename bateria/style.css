@@ -1,0 +1,58 @@
+
+body{
+    width: 97vw;
+    height: 77Vh;
+}
+ img{
+    display: flex;
+    width: 600px;
+    margin: auto;
+    margin-top: 200px;
+}
+#bateria{
+    position: relative;
+}
+#e{
+    position: absolute;
+    top: 12%;
+    left: 23%;
+    background-color: #7affc8be;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+#prato{
+    margin: 0;
+    width: 120px;
+    position: absolute;
+    top: 6%;
+    left: 18%;
+    
+}
+
+.circle{
+    animation: circle .7s linear ;
+}
+
+@keyframes circle{
+    0% {
+        transform: rotate(10deg) translateX(0px);
+    }
+    20% {
+        transform: rotate(-10deg) translateX(0px);
+    }
+    40% {
+        transform: rotate(10deg) translateX(0px);
+    }
+    60% {
+        transform: rotate(-10deg) translateX(0px);
+    }
+    80% {
+        transform: rotate(10deg) translateX(0px);
+    }
+    100% {
+        transform: rotate(-10deg) translateX(0px);
+      }
+}
