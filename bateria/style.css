@@ -5,30 +5,40 @@ body{
 }
  img{
     display: flex;
-    width: 600px;
-    margin: auto;
-    margin-top: 200px;
+    width: 700px;
+    
 }
 #bateria{
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: auto;
+    margin-top: 200px;
+}
+.btn{
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
 }
 #e{
     position: absolute;
     top: 12%;
-    left: 23%;
+    left: 8%;
     background-color: #7affc8be;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    text-align: center;
-    
+    justify-content: center;
 }
 #prato{
     margin: 0;
-    width: 120px;
+    width: 150px;
     position: absolute;
     top: 6%;
-    left: 18%;
+    left: 0%;
     
 }
 

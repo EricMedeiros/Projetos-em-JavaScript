@@ -101,3 +101,20 @@ fetch(`https://api.github.com/users/${username}`,{
 }).catch((err)=> {
     console.log(`ocorreu um erro: ${err}`)
 })
+
+function exemplo() {
+    return new Promise((resolver)=> {
+    setTimeout(()=>{
+        num = Math.floor(Math.random()*10)+1;
+        resolver()
+    },2000)
+})
+};
+var num = 0;
+  async function gerarnumero() {
+    
+    await exemplo()
+    console.log(num)
+}
+
+gerarnumero()
