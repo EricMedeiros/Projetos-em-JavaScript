@@ -1,48 +1,35 @@
-var selectseg = document.getElementById('segundos');
-var selectmin = document.getElementById('minutos');
-var tela = document.getElementById('tela');
-var começar = document.getElementById('comecar');
-var body = document.getElementsByTagName('body')
+var res = document.getElementById("res");
+var btn = document.querySelector("button");
 
-for(i=1;i<=60;i++){
-    selectseg.innerHTML += `<option value="${i}"> ${i} </option>`;
-}
-for(i=0;i<=60;i++){
-    selectmin.innerHTML += `<option value="${i}"> ${i} </option>`; 
-}
-var minatual;
-var segatual;
-var interval;
+btn.addEventListener('click',()=>{
+    start()
+});
 
+function start(){
+    var s = 0;
+    var m = 0;
+    var h = 0;
+    setInterval(()=> {
+    s++
+    let seg = s.toString().padStart(2,'0');
+    let min = m.toString().padStart(2,'0');
+    let hor = h.toString().padStart(2,'0');
+    if(seg<10){
+    res.textContent= `${hor}:${min}:${seg}`
+    } 
+    else if(seg<60){
+    res.textContent= `${hor}:${min}:${seg}`
+    }else{
+    res.textContent= `${hor}:${min}:00`
+    s=0
+    m++
+    };
+    if(m = 60){
+    m=0
+    h++
+
+    }
     
-começar.addEventListener('click',function(){
-    minatual = selectmin.value;
-    segatual = selectseg.value;
-    
-    tela.childNodes[1].innerHTML= minatual +':'+segatual;
 
-    interval= setInterval(function(){
-        segatual--;
-        
-        if(segatual<=0){
-            if(minatual>0){
-                minatual--;
-                segatual= 59;
-            } else{
-                clearInterval(interval);
-                tela.childNodes[1].innerHTML= '00:00';
-                document.body.style.backgroundColor= 'red'
-        }
-
-        }
-        if(segatual<10){
-        var x='0'
-    }else{var x = ""}
-    if(minatual<10){
-        var y= '0'
-    }else{var y=""}
-        tela.childNodes[1].innerHTML= y+minatual +':'+x+segatual;
-    },1000);
-})
-
-
+    },1000)
+};

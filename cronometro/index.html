@@ -6,53 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cronômetro</title>
     <style>
-        body{
-            background-color: #ebf0f2;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        #display{
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        #container{
             background-color: lightgray;
+            width: 300px ;
+            height: 200px;
             border-radius: 10px;
-            box-shadow: 2px 2px 8px black;
             text-align: center;
-            width: 300px;
-            height: 400px;
             position: absolute;
             top: 40%;
             left: 50%;
             transform: translate(-50%,-50%);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411),-1px -1px 3px rgba(0, 0, 0, 0.411), -1px 1px 3px rgba(0, 0, 0, 0.411),1px -1px 3px rgba(0, 0, 0, 0.411) ;
+        }
+        #container h1, button, div{
+            margin-top: 20px;
         }
         button{
-            background-color: #686a6c41;
-            border: 2px solid #383735;
-            color: #383735;
-            font-weight: bold;
-            margin: 20px;
-            width: 90px;
+            width: 80px;
             height: 30px;
-            border-radius: 7px;
-            transition: transform 0.3s; 
-            transition: color 0.5s, background-color 0.5s;    
+            font-family: monospace;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411),-1px -1px 3px rgba(0, 0, 0, 0.411), -1px 1px 3px rgba(0, 0, 0, 0.411),1px -1px 3px rgba(0, 0, 0, 0.411) ;
+                       
         }
-        button:hover{
-            background-color: #383735;
+        button:active{
             color: white;
-            transform: translate(-2px,-5px);
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 2px;
         }
     </style>
 </head>
 <body>
-   <div id="display">
-       <h1>cronômetro</h1>
-       <h2>minutos</h2>
-       <select name="minutos" id="minutos"></select>
-       <h2>segundos</h2>
-       <select name="segundos" id="segundos"></select>
-       <br>
-       <button id="comecar">começar</button>
-       <div id="tela">
-           <h3></h3>
-       </div>
-   </div>
-   <script src="script.js"></script>
+    <div id="container">
+        <h1>cronômetro</h1>
+        <button>start</button>
+        <div id="res">00:00</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
