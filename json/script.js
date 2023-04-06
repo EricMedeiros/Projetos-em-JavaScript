@@ -49,3 +49,33 @@ obj[0].novidades = "jonh wick 4";
 obj.map((dados)=>{
     console.log(dados.novidades)
 })
+
+//criando e citando objetos
+
+const obj2 = {
+    nomenew: "eric",
+    idadenew: 20
+};
+
+let {nomenew: onlyname, idadenew: onlyage } = obj2;
+
+console.log(onlyname, onlyage + ' anos')
+
+//destructuring function
+var teste = (valor1) => {  
+    return { valor1: valor1, valor2: "valor2" };
+  }
+  
+
+var mult = (callback) => {
+    var valor1 = 5*5;
+   return callback(valor1)
+}
+mult(teste)
+
+
+
+let {valor1: var1, valor2: var2} = mult(teste);
+
+console.log(var1)
+
